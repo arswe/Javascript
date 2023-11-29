@@ -1,10 +1,10 @@
-checkSpeed(130);
+checkSpeed(71);
 
 function checkSpeed(speed) {
   const speedLimit = 70;
   const kmPerPoint = 5;
 
-  if (speed < speedLimit + kmPerPoint) {
+  if (speed <= speedLimit + kmPerPoint) {
     console.log('Ok');
     return;
   }
