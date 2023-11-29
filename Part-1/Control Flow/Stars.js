@@ -1,4 +1,4 @@
-showStars(5);
+showStars(10);
 
 function showStars(rows) {
   for (let row = 1; row <= rows; row++) {
