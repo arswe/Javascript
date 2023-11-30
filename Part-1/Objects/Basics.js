@@ -9,12 +9,9 @@ const circle = {
     y: 1,
   },
   isVasible: true,
+  drow: function () {
+    console.log('draw');
+  },
 };
 
-function drow() {
-  console.log('draw');
-}
-
-function move() {
-  console.log('move');
-}
+circle.drow();
