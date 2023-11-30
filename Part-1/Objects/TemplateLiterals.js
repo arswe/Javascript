@@ -1,6 +1,11 @@
 //  Template Literals
 
-const message = `this is my 
- 'first'
-  message`;
+const name = 'AbdurRahman';
+
+const message = `
+Hi ${name} ${2 + 3}
+
+Thank you for joining me mailing list
+Regards
+akaid`;
 console.log(message);
