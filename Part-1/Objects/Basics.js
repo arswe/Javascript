@@ -14,4 +14,5 @@ const circle = {
   },
 };
 
-circle.drow();
+function drow();
+function move()
