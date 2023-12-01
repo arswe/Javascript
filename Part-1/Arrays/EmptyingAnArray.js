@@ -14,8 +14,6 @@ let another = numbers;
 // console.log(numbers);
 // console.log(another);
 
-while (numbers.length > 0) {
-  numbers.pop();
-}
+while (numbers.length > 0) numbers.pop();
 console.log(numbers);
 console.log(another);
