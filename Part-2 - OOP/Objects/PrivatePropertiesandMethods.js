@@ -1,4 +1,4 @@
-// abstruction Properties
+// Private Properties and Methods Properties
 
 function Circle(radius) {
   this.radius = radius;
