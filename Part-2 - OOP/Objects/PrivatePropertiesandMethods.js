@@ -3,16 +3,18 @@
 function Circle(radius) {
   this.radius = radius;
 
-  this.defaultLocation = { x: 0, y: 0 };
-  this.computeOptimumLocation = function (factor) {
+  let defaultLocation = { x: 0, y: 0 }; // private property
+  let computeOptimumLocation = function (factor) {
     // ...
   };
   this.draw = function () {
-    this.computeOptimumLocation(1.2);
+    computeOptimumLocation(1.2);
+    // defaultLocation; // private property
+    // this.radius; // public property
     console.log('draw');
   };
 }
 
 const circle = new Circle(10);
-circle.computeOptimumLocation();
+circle.();
 circle.draw();
