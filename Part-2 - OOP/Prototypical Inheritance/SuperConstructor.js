@@ -1,12 +1,15 @@
-//  Resetting the Constructor example:
+// Calling the Super Constructor.
 
-function Shape() {}
+function Shape(color) {
+  this.color = color;
+}
 
 Shape.prototype.duplicate = function () {
   console.log('duplicate');
 };
 
-function Circle(radius) {
+function Circle(radius, color) {
+  Shape.call(this, color); // This will call the super constructor.
   this.radius = radius;
 }
 // Circle.prototype.constructor = Circle; // This is the default value
@@ -20,4 +23,4 @@ Circle.prototype.draw = function () {
 };
 
 const s = new Shape();
-const c = new Circle(1);
+const c = new Circle(1, 'red');
