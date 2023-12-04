@@ -1,4 +1,4 @@
-// ES6 Classes
+// ES6 Hoisting
 
 // function Circle(radius) {
 //   this.radius = radius;
