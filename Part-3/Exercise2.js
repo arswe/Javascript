@@ -4,10 +4,11 @@
 // problem: linearSearch() function implementation
 
 function linearSearch(array, value) {
-  for (let i = 0; i < array.length; i++) {
+  let lenght = array.length;
+  for (let i = 0; i < lenght; i++) {
     if (array[i] === value) return i;
   }
-  return -1;
+  return 'Not found';
 }
 
 console.log(linearSearch(['a', 'b', 'c', 'd', 'e'], 'a'));
