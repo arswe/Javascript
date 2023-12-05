@@ -10,4 +10,4 @@ function longestString(names) {
   return longest;
 }
 
-console.log(longestString(['a', 'abc', 'ab', 'abcd', 'abcde', 'abcdef']));
+console.log(longestString(['Holly', 'Elise', 'Rory', 'Ollie', 'Peter', 'AbdurRahman']));
