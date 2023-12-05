@@ -8,4 +8,4 @@ function longestString(names) {
   return [longestWord, names.indexOf(longestWord)];
 }
 
-console.log(longestString(['Holly', 'Elise', 'Rory', 'Ollie', 'Peter', 'AbdurRahman']));
+console.log(longestString(['Holly', 'Elise', 'Rory', 'Ollie', 'Peter', 'AbdurRahman', 'Mehdi', 'Mehdi']));
