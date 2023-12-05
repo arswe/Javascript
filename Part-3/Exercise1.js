@@ -12,3 +12,8 @@ console.log(ocurrences);
 const words = sentence.split(' ');
 console.log(words.length);
 
+// 3. Find the position of the word sit in the string.
+let position = sentence.search(/ipsum/i);
+position = position > -1 ? position : 'Not found';
+
+console.log(position);
