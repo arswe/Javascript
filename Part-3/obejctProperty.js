@@ -20,10 +20,17 @@ const product = {
   salePrice: undefined,
 };
 
-const label = product.label;
-const prices = product.price;
+// const label = product.label;
+// const prices = product.price;
 
-const { label: productLabel, price, stocks, salePrice, rating = 5 } = product;
-console.log(productLabel);
-console.log(price);
-console.log(stocks);
+// const { label: productLabel, price, stocks, salePrice, rating = 5 } = product;
+// console.log(productLabel);
+// console.log(price);
+// console.log(stocks);
+
+// 3. Object destructuring in function parameter
+const transaction = (type, { label, price, stocks }) => {
+  console.log(type, label, price, stocks);
+};
+
+transaction('order', product);
