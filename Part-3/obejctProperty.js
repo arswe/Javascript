@@ -77,10 +77,14 @@ const product = {
 // }
 
 // delete object property
-delete product['stocks'];
-for (const key in product) {
-  if (product.hasOwnProperty(key)) {
-    const element = product[key];
-    console.log(key, element);
-  }
-}
+// delete product['stocks'];
+// for (const key in product) {
+//   if (product.hasOwnProperty(key)) {
+//     const element = product[key];
+//     console.log(key, element);
+//   }
+// }
+
+// Object.keys() -> return an array of object keys
+let contry = new String('Bangladesh');
+console.dir(contry.concat(' is a beautiful country').toUpperCase());
