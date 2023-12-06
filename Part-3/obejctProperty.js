@@ -13,12 +13,12 @@
 // console.log(user);
 
 // 2. Object destructuring
-const product = {
-  label: 'Red notebook',
-  price: 3,
-  stocks: 201,
-  salePrice: undefined,
-};
+// const product = {
+//   label: 'Red notebook',
+//   price: 3,
+//   stocks: 201,
+//   salePrice: undefined,
+// };
 
 // const label = product.label;
 // const prices = product.price;
@@ -36,9 +36,40 @@ const product = {
 // transaction('order', product);
 
 // 4. Object destructuring in function parameter with default value
-const transaction = (type, { label, price, stocks = 0 } = {}) => {
-  console.log(type, label, price, stocks);
+// const transaction = (type, { label, price, stocks = 0 } = {}) => {
+//   console.log(type, label, price, stocks);
+// };
+
+// transaction('order', product);
+// transaction('order');
+
+// forin loop nestest object
+const product = {
+  label: 'Red notebook',
+  price: 3,
+  stocks: 201,
+  salePrice: undefined,
+  quntity: 0,
+  activitis: {
+    sale: 'sale',
+    new: 'new',
+  },
 };
 
-transaction('order', product);
-transaction('order');
+// forin loop -> loop through object
+for (const key in product) {
+  console.log(key, product[key]);
+}
+
+// forin loop -> loop through nested object
+for (const key in product.activitis) {
+  console.log(key, product.activitis[key]);
+}
+
+// forin loop -> loop through object with hasOwnProperty
+for (const key in product) {
+  if (product.hasOwnProperty(key)) {
+    const element = product[key];
+    console.log(key, element);
+  }
+}
