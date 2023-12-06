@@ -29,8 +29,16 @@ const product = {
 // console.log(stocks);
 
 // 3. Object destructuring in function parameter
-const transaction = (type, { label, price, stocks }) => {
+// const transaction = (type, { label, price, stocks }) => {
+//   console.log(type, label, price, stocks);
+// };
+
+// transaction('order', product);
+
+// 4. Object destructuring in function parameter with default value
+const transaction = (type, { label, price, stocks = 0 } = {}) => {
   console.log(type, label, price, stocks);
 };
 
 transaction('order', product);
+transaction('order');
