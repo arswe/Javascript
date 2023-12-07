@@ -14,12 +14,20 @@ const person = {
   },
 };
 
-let txt = '';
+let conv = JSON.stringify(person);
+console.log(typeof conv);
 
-for (let key in person) {
-  txt += person[key] + ' ';
-  document.getElementById('demo').innerHTML = txt;
-}
+// const PersonArray = Object.values(person);
+// for (let x of PersonArray) {
+//   console.log(x);
+// }
+
+// let txt = '';
+
+// for (let key in person) {
+//   txt += person[key] + ' ';
+//   document.getElementById('demo').innerHTML = txt;
+// }
 
 // document.getElementById('demo').innerHTML =
 //   person.name +
