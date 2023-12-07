@@ -1,17 +1,17 @@
 // Object Property example:
-const product = {
-  label: 'Red notebook',
-  price: 3,
-  stocks: 201,
-  salePrice: (currentPrice) => {
-    return currentPrice - 2;
-  },
-  quntity: 0,
-  activitis: {
-    sale: 'sale',
-    new: 'new',
-  },
-};
+// const product = {
+//   label: 'Red notebook',
+//   price: 3,
+//   stocks: 201,
+//   salePrice: (currentPrice) => {
+//     return currentPrice - 2;
+//   },
+//   quntity: 0,
+//   activitis: {
+//     sale: 'sale',
+//     new: 'new',
+//   },
+// };
 // 1. Object property shorthand
 
 // const name = 'Andrew';
@@ -86,5 +86,20 @@ const product = {
 // }
 
 // Object.keys() -> return an array of object keys
-let contry = new String('Bangladesh');
-console.dir(contry.concat(' is a beautiful country').toUpperCase());
+// let contry = new String('Bangladesh');
+// console.dir(contry.concat(' is a beautiful country').toUpperCase());
+
+// const myObjects = {
+//   name: 'akaid',
+//   age: 26,
+//   cars: [
+//     { name: 'Ford', models: ['Fiesta', 'Focus', 'Mustang'] },
+//     { name: 'BMW', models: ['320', 'X3', 'X5'] },
+//     { name: 'Fiat', models: ['500', 'Panda'] },
+//     { name: 'Honda', models: ['Accord', 'Civic', 'Jazz'] },
+//     { name: 'Kia', models: ['Rio', 'Sportage'] },
+//   ],
+// };
+
+// delete myObjects.age;
+// console.log(myObjects.cars[2].name);
