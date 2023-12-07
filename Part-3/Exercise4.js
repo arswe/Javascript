@@ -8,4 +8,5 @@ function fizzBuzz(number) {
   }
 }
 
+//
 fizzBuzz(100);
