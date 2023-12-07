@@ -58,3 +58,6 @@ obj.add = 5;
 obj.subtract = 1;
 obj.increment;
 obj.decrement;
+
+// Display counter:
+console.log(obj.counter);
