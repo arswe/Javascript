@@ -34,4 +34,5 @@ const person = {
   },
 };
 
-console.log(setTimeout(person.display, 3000));
+let display = person.display.bind(person);
+console.log(setTimeout(display, 3000));
