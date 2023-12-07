@@ -1,21 +1,14 @@
 const person = {
   name: 'akaid',
   age: 26,
-  location: {
-    city: 'Dhaka',
-    country: 'Bangladesh',
-  },
-  education: {
-    degree: 'BSC',
-    school: {
-      name: 'TZ',
-      location: 'Debigabj',
-    },
-  },
+  date: new Date(),
 };
 
 let conv = JSON.stringify(person);
-console.log(typeof conv);
+document.getElementById('demo').innerHTML = conv;
+
+// let conv = JSON.stringify(person);
+// console.log(typeof conv);
 
 // const PersonArray = Object.values(person);
 // for (let x of PersonArray) {
