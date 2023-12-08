@@ -1,4 +1,5 @@
 const milestonesData = JSON.parse(data).data;
+console.log(milestonesData);
 
 // load course milestones data
 function loadMilestones() {
@@ -83,9 +84,6 @@ function markMileStone(checkbox, id) {
     // back to main list
     milestonesList.appendChild(item);
     doneList.removeChild(item);
-
-    // task - do the sorting
-    // reload list
   }
 }
 
