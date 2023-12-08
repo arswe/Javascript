@@ -1,3 +1,3 @@
-const myCollection = document.getElementsByTagName('p');
+const myCollection = document.querySelectorAll('.hello');
 
-document.getElementById('demo').innerHTML = 'The innerHTML of the second paragraph is: ' + myCollection[1].innerHTML;
+console.dir(myCollection);
