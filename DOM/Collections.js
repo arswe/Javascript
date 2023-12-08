@@ -1,3 +1,3 @@
-const myCollection = document.querySelectorAll('.hello');
+const myCollection = document.getElementsByTagName('p');
 
-console.dir(myCollection);
+console.log(myCollection);
