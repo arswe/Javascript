@@ -49,7 +49,6 @@ function openMilestone(milestoneElement, id) {
 
   // toggle current element
   currentPanel.classList.toggle('show');
-
   showMilestone(id);
 }
 
