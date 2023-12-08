@@ -43,8 +43,6 @@ const add = (function () {
   };
 })();
 
-add();
-add();
-add();
+console.log(add());
 
 // the counter is now 3
