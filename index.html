@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documents</title>
   </head>
-  <body onload="checkCookie()">
+  <body>
+    <div>
+      <button type="button" onclick="setCookie('name', 'AbdurRahman', 2)">Set Name</button>
+      <button type="button" onclick="setCookie('username', 'akaid', 2)">Set userName</button>
+      <button type="button" onclick="getCookie('name')">get Name</button>
+    </div>
     <script src="./BOM/Cookies.js"></script>
   </body>
 </html>
