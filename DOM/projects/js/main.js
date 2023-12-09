@@ -70,6 +70,7 @@ milestoneImage.onload = function () {
   this.style.opacity = '1';
 };
 
+// mark milestone as done
 function markMileStone(checkbox, id) {
   const doneList = document.querySelector('.doneList');
   const milestonesList = document.querySelector('.milestones');
