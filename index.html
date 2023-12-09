@@ -8,13 +8,16 @@
   <body>
     <h2>JavaScript HTML BOM</h2>
 
-    <div id="confirm"></div>
-    <div id="prompt"></div>
+    <div id="timeout"></div>
+    <div id="interval"></div>
 
-    <button onclick="myFunction()">Try Alert</button>
-    <button onclick="confirmBox()">Try Confirm Box</button>
-    <button onclick="promptBox()">Try Prompt Box</button>
+    <div>
+      <input type="button" value="Start Timeout" onclick="startTimeout()" />
+    </div>
+    <div>
+      <input type="button" value="Stop Timeout" onclick="stopTimeout()" />
+    </div>
 
-    <script src="./BOM/PopupBoxes.js"></script>
+    <script src="./BOM/timing.js"></script>
   </body>
 </html>
