@@ -1,8 +1,12 @@
 function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function () {
+  // create XMLHttpRequest object
+  const xhr = new XMLHttpRequest();
+  xhr.onload = function () {
     document.getElementById('demo').innerHTML = this.responseText;
   };
-  xhttp.open('GET', 'ajax_info.txt', true);
-  xhttp.send();
+  // prepare request - Method: GET, POST, PUT, DELETE etc.
+  xhr.open('GET', '../data.txt', true);
+
+  // send Request
+  xhr.send();
 }
