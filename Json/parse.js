@@ -1,5 +1,7 @@
-const person = '{"name": "John", "age": "30"}';
-console.log(person);
+const txt = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+// display the text in the console
+console.log(txt);
 
-const jsonPerson = JSON.parse(person);
-console.log(jsonPerson);
+// Parse the text, and transform the result into a JavaScript object.`
+const obj = JSON.parse(txt);
+console.log(obj);
