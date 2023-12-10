@@ -6,9 +6,18 @@
     <title>Documents</title>
   </head>
   <body>
-    
-    <a href="">Page One</a>
+    <button type="button" onclick="setLocalStorage('name', 'AbdurRahman')">Set Local Storage Name</button>
 
-    <script src="./APIs/History.js"></script>
+    <button type="button" onclick="getLocalStorage('name')">Get Local Storage Name</button>
+
+    <button type="button" onclick="setLocalStorage('userName', 'akaid')">Set Local Storage userName</button>
+
+    <button type="button" onclick="getLocalStorage('userName')">Get Local Storage userName</button>
+
+    <button type="button" onclick="removeLocalStorage('name')">Remove Local Storage Name</button>
+
+    <button type="button" onclick="clearLocalStorage()">Clear Local Storage</button>
+
+    <script src="./APIs/Storage.js"></script>
   </body>
 </html>
